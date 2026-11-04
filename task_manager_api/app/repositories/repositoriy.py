@@ -2,6 +2,7 @@ from app.models.tasks import Task
 from app.schemas.shemas import TaskCreate, TaskUpdate
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
+import asyncio
 
 class TaskRepository:
     def __init__(self, session: AsyncSession):
