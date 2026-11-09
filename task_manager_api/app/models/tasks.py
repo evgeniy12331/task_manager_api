@@ -35,3 +35,5 @@ class Task(Base):
         default=False,
         nullable=False,
     )
+# Что делает этот файл?
+# Он описывает таблицу tasks в PostgreSQL.

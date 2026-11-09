@@ -24,6 +24,8 @@ class TaskResponse(BaseModel):
     model_config = ConfigDict(from_attributes=True)
     id: int
     title: str
-    description: str
+    description: str | None
     priority: int
     status: TaskStatus
+
+#     отвечает за проверку входящих данных от пользователя и формирование ответа API.

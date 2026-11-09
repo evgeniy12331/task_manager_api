@@ -21,3 +21,4 @@ async def get_db():
     async with AsyncSessionLocal() as session:
         yield session
 
+# Этот файл отвечает за создание подключения к PostgreSQL, управление асинхронными сессиями и передачу сессии в другие части приложения.
